@@ -49,11 +49,21 @@ document.getElementById('btn-delete').addEventListener('click', () => {
 
 //This function displays all the 'Person' objects on the page
 function addPerson(personArray) {
-    let tableWrapper = document.getElementById('table-wrapper');
+    let tableWrapper = document.getElementById('agenda');
 
-    tableWrapper.innerHTML = '';
+    tableWrapper.innerHTML = `
+        <tr>
+            <th>Last Name</th>
+            <th>First Name</th>
+            <th>Phone Number</th>
+        </tr>`;
     
     personArray.forEach((person) => {
-        tableWrapper.innerHTML += `<p>${person.lastName} ${person.firstName} ${person.phoneNumber}</p>`;
+        tableWrapper.innerHTML += `
+            <tr>
+                <td>${person.lastName}</td> 
+                <td>${person.firstName}</td> 
+                <td>${person.phoneNumber}</td>
+            </tr>`;
     } )
 }
