@@ -15,9 +15,9 @@ const personArray = [];
 
 //This Event Listener adds a 'Person' object from the input to the array and then displays it on the page
 document.getElementById('btn-add').addEventListener('click', () => {
-    const lastName = document.querySelector('#last-name > input').value;
-    const firstName = document.querySelector('#first-name > input').value;
-    const phoneNumber = document.querySelector('#phone-number > input').value;
+    const lastName = document.getElementById('lastName').value;
+    const firstName = document.getElementById('firstName').value;
+    const phoneNumber = document.getElementById('phoneNumber').value;
 
     personArray.push(new Person(lastName, firstName, phoneNumber));
 
@@ -26,9 +26,9 @@ document.getElementById('btn-add').addEventListener('click', () => {
 
 //This Event Listener removes a 'Person' object from the input in the array and then displays the remaining objects on the page
 document.getElementById('btn-delete').addEventListener('click', () => {
-    const lastName = document.querySelector('#last-name > input').value;
-    const firstName = document.querySelector('#first-name > input').value;
-    const phoneNumber = document.querySelector('#phone-number > input').value;
+    const lastName = document.getElementById('lastName').value;
+    const firstName = document.getElementById('firstName').value;
+    const phoneNumber = document.getElementById('phoneNumber').value;
 
     const index = personArray.findIndex(person =>
         person.lastName === lastName &&

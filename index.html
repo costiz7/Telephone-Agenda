@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Telephone Agenda</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles/style.css">
 </head>
 <body>
@@ -13,17 +16,17 @@
         </div>
         <div id="form-wrapper">
             <div id="inputs">
-                <div id="last-name">
-                    <span>Last Name</span>
-                    <input type="text">
+                <div class="input-wrapper">
+                    <label for="lastName">Last Name</label>
+                    <input id="lastName" type="text">
                 </div>
-                <div id="first-name">
-                    <span>First Name</span>
-                    <input type="text">
+                <div class="input-wrapper">
+                    <label for="firstName">First Name</label>
+                    <input id="firstName" type="text">
                 </div>
-                <div id="phone-number">
-                    <span>Phone Number</span>
-                    <input type="text">
+                <div class="input-wrapper">
+                    <label for="phoneNumber">Phone Number</label>
+                    <input id="phoneNumber" type="text">
                 </div>
             </div>
             <div id="buttons">
