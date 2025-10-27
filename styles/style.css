@@ -5,7 +5,8 @@
 }
 
 body {
-    font-family: 'Noto Sans', monospace;
+    font-family: 'Comic Relief', system-ui;
+    letter-spacing: 1px;
     background-color: rgb(255, 255, 255);
     position: relative;
     padding: 5vh 0;
@@ -33,7 +34,7 @@ body {
     min-width: 100%;
     display: flex;
     justify-content: center;
-    margin-bottom: 30px;
+    margin-bottom: 100px;
 }
 
 #form-wrapper {
@@ -58,8 +59,9 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 30px;
+    gap: 50px;
     align-items: center;
+    margin-bottom: 50px;
 }
 
 .input-wrapper {
@@ -69,12 +71,16 @@ body {
 }
 
 .input-wrapper input {
+    font-family: 'Comic Relief', system-ui;
+    letter-spacing: 1px;
     position: relative;
     min-height: 40px;
     min-width: 200px;
     font-size: 1rem;
     padding: 0px 5px;
     border: solid 2px black;
+    caret-color: black;
+    outline: none;
     border-radius: 5px;
     box-shadow: 5px 5px 0 rgba(0, 0, 0, 0.3);
 }
@@ -88,4 +94,40 @@ body {
     left: 10px;
     top: -11px;
     padding: 0px 5px;
+}
+
+#title {
+    font-family: 'Pacifico', cursive;
+    font-size: 3rem;
+    font-weight: 100;
+    letter-spacing: 2px;
+}
+
+#buttons {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+#buttons button {
+    font-family: 'Comic Relief', system-ui;
+    letter-spacing: 1px;
+    position: relative;
+    min-height: 50px;
+    min-width: 150px;
+    background-color: white;
+    border: solid 2px black;
+    transition: 300ms;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 5px 5px 0 rgba(0, 0, 0, 0.3);
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+#buttons button:active {
+  transform: scale(0.95);
+  box-shadow: none;
 }
