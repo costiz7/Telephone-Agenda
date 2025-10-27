@@ -4,11 +4,21 @@
     box-sizing: border-box;
 }
 
+:root {
+    --bg-color: white;
+    --text-color: black;
+}
+
+.dark-theme {
+  --bg-color: black;
+  --text-color: white;
+}
 body {
     font-family: 'Comic Relief', system-ui;
     letter-spacing: 1px;
-    background-color: rgb(255, 255, 255);
+    background-color: var(--bg-color);
     position: relative;
+    transition: 300ms;
     padding: 5vh 0;
     display: flex;
     justify-content: center;
@@ -17,12 +27,13 @@ body {
 
 #app-wrapper {
     position: relative;
-    background-color: white;
+    background-color: var(--bg-color);
     border: solid 3px;
     border-radius: 20px;
     box-shadow: 20px 20px 0 rgba(0, 0, 0, 0.3);
     min-width: 80vw;
     padding: 2%;
+    transition: 300ms;
     display: flex;
     flex-direction: column;
     align-items: center;
