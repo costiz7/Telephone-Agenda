@@ -32,6 +32,7 @@ document.getElementById('btn-add').addEventListener('click', () => {
     document.getElementById('firstName').value = "";
     document.getElementById('phoneNumber').placeholder="";
     document.getElementById('phoneNumber').value = "";
+    localStorage.setItem("personArray", JSON.stringify(personArray));
 });
 
 //This Event Listener removes a 'Person' object from the input in the array and then displays the remaining objects on the page
@@ -61,11 +62,12 @@ document.getElementById('btn-delete').addEventListener('click', () => {
     document.getElementById('firstName').placeholder="";
     document.getElementById('firstName').value = "";
     document.getElementById('phoneNumber').placeholder="";
-    document.getElementById('phoneNumber').value = "";;
+    document.getElementById('phoneNumber').value = "";
+    localStorage.setItem("personArray", JSON.stringify(personArray));
 });
 
 //This function displays all the 'Person' objects on the page
-function addPerson(personArray) {
+window.addPerson = function(personArray) {
     let tableWrapper = document.getElementById('agenda');
 
     tableWrapper.innerHTML = `
