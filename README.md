@@ -39,5 +39,5 @@ It lets you add, view, and delete people directly in your browser — all data i
 
 1. Clone this repository:
    ```bash
-   git clone https://github.com/<your-username>/telephone-agenda.git
+   git clone https://github.com/costiz7/telephone-agenda.git
 
